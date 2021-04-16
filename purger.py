@@ -6,16 +6,9 @@ from subprocess import Popen, PIPE
 from urllib.request import Request, urlopen
 from datetime import datetime
 from threading import Thread
-from time import sleep
 from sys import argv
 from colorama import Fore
 from discord.ext import commands
-from datetime import datetime
-
-now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
-tz_NY = pytz.timezone('America/New_York')
-datetime_NY = datetime.now(tz_NY)
 
 def clear():
     os.system('cls')
